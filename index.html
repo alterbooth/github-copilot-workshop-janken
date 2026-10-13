@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ジャンケンゲーム</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #computer-hand {
+            width: 100px;
+            height: 100px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ジャンケンゲーム</h1>
+    <div>
+        <img id="computer-hand" src="img/gu.png" alt="コンピュータの手">
+    </div>
+    <div id="result">ジャンケン・・・</div>
+    <div class="button-container">
+        <button onclick="play('gu')">グー</button>
+        <button onclick="play('choki')">チョキ</button>
+        <button onclick="play('pa')">パー</button>
+    </div>
+    <div class="button-container">
+        <button onclick="resetGame()">もう一度</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
